@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" role="img" aria-label="Pentrixa Icon">
+  <defs>
+    <!-- Webfont embed -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap');
+      .icon-monogram {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-weight: 700;
+        font-size: 29px;
+        fill: #F7F1ED;
+      }
+    </style>
+
+    <!-- Rose Gold Outer Rim Gradient -->
+    <linearGradient id="iconRoseGold" x1="15%" y1="15%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#EEDAD5" />
+      <stop offset="50%" stop-color="#C9A3A0" />
+      <stop offset="100%" stop-color="#9A6B68" />
+    </linearGradient>
+
+    <!-- Core Ambient Glow -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#803D41" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#1A0E11" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="iconShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="3" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Behind Geometric Layers -->
+  <circle cx="50" cy="50" r="42" fill="url(#coreGlow)" />
+
+  <g filter="url(#iconShadow)">
+    <!-- Outer Diamond -->
+    <polygon points="50,6 94,50 50,94 6,50" 
+             stroke="url(#iconRoseGold)" 
+             stroke-width="2.5" 
+             stroke-linejoin="round" 
+             fill="#180C10" />
+
+    <!-- Middle Geometric Accent Diamond -->
+    <polygon points="50,17.5 82.5,50 50,82.5 17.5,50" 
+             stroke="#7A3B3E" 
+             stroke-width="1.6" 
+             stroke-linejoin="round" 
+             fill="none" 
+             opacity="0.85" />
+
+    <!-- Inner Diamond Frame -->
+    <polygon points="50,28 72,50 50,72 28,50" 
+             stroke="#E2C7C1" 
+             stroke-width="1.2" 
+             stroke-linejoin="round" 
+             fill="#221317" />
+
+    <!-- Stylized Monogram P (Optically Centered) -->
+    <text x="50" y="50.5" 
+          class="icon-monogram" 
+          text-anchor="middle" 
+          dominant-baseline="central">P</text>
+  </g>
+</svg>

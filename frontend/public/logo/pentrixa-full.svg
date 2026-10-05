@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 80" width="100%" height="100%" role="img" aria-label="Pentrixa Tech Logo">
+  <defs>
+    <!-- Import Google Fonts for cross-platform rendering -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+      .brand-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        fill: #F7F1ED;
+      }
+      .brand-sub {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.22em;
+        fill: #C9A3A0;
+      }
+      .brand-tagline {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 7px;
+        letter-spacing: 0.38em;
+        fill: #CBB9B5;
+        opacity: 0.85;
+      }
+      .monogram {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-weight: 700;
+        font-size: 21px;
+        fill: #F7F1ED;
+      }
+    </style>
+
+    <!-- Subtle Ambient Glow -->
+    <radialGradient id="emblemGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6F3437" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1A0E11" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Linear Accents for Diamond Strokes -->
+    <linearGradient id="roseGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAD5D0" />
+      <stop offset="100%" stop-color="#A57A78" />
+    </linearGradient>
+
+    <!-- Soft Depth Filter -->
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Geometric Nested Diamond Emblem -->
+  <g transform="translate(12, 5)" filter="url(#softShadow)">
+    <!-- Ambient Backdrop Ring -->
+    <circle cx="35" cy="35" r="32" fill="url(#emblemGlow)" />
+
+    <!-- Outer Diamond -->
+    <polygon points="35,4 66,35 35,66 4,35" stroke="url(#roseGoldGrad)" stroke-width="1.75" stroke-linejoin="round" fill="#180C10" />
+
+    <!-- Middle Diamond -->
+    <polygon points="35,12.5 57.5,35 35,57.5 12.5,35" stroke="#7A3B3E" stroke-width="1.25" stroke-linejoin="round" fill="none" opacity="0.85" />
+
+    <!-- Inner Core Diamond -->
+    <polygon points="35,20.5 49.5,35 35,49.5 20.5,35" stroke="#E2C7C1" stroke-width="1" stroke-linejoin="round" fill="#241418" />
+
+    <!-- Centered Monogram -->
+    <text x="35" y="36" class="monogram" text-anchor="middle" dominant-baseline="central">P</text>
+  </g>
+
+  <!-- Wordmark & Suffix -->
+  <text x="96" y="40">
+    <tspan class="brand-title" font-size="23.5">PENTRIXA</tspan>
+    <tspan dx="10" class="brand-sub" font-size="14.5">TECH</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="97" y="58" class="brand-tagline">BUILD. INNOVATE. SCALE.</text>
+</svg>
