@@ -54,11 +54,6 @@ export default function Hero() {
               Chat on WhatsApp
             </Button>
           </div>
-
-          <div className="hero-direct-call">
-            <span className="call-caption">Direct founder contact:</span>
-            <a href="tel:+917709562948" className="call-number">+91 77095 62948</a>
-          </div>
         </div>
       </div>
     </section>
