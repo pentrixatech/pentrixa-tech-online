@@ -1,14 +1,14 @@
 export const projects = [
   {
-    slug: "pentrixa-tech-platform",
-    title: "Pentrixa Tech Website",
+    slug: "top-cool-service",
+    title: "Top Cool Services — Appliance Repair Platform",
     category: "Web Platform",
-    tag: "Internal Project",
-    summary: "The official editorial, high-performance web platform built for Pentrixa Tech to present our engineering, data, and software capabilities.",
-    overview: "Designed with a bespoke geometric design language, optimized typography, accessible components, and a frontend-only inquiry transmission pipeline.",
-    stack: ["React.js", "Vite", "Modern CSS", "Web APIs"],
-    deliverables: ["Responsive UI", "Editorial Design System", "Form Service Integration", "SEO Architecture"],
-    outcome: "Zero-backend architecture providing sub-second load times and zero server maintenance overhead."
+    tag: "Client Project",
+    summary: "A high-conversion digital web platform and programmatic hyper-local SEO architecture engineered for a multi-category home appliance repair provider.",
+    overview: "Built to capture high-intent repair requests across washing machines, refrigerators, microwave ovens, and cooling units. Features location-tailored landing funnels, structured schema markup, and direct customer dispatch mechanisms.",
+    stack: ["React.js", "Vite", "Pure CSS", "Programmatic SEO"],
+    deliverables: ["Localized Service Hubs", "Direct Dispatch Flow", "Technical Schema Markup", "Responsive Mobile UI"],
+    outcome: "Strengthened hyper-local search visibility and enabled instantaneous booking handoffs via direct phone and messaging channels."
   },
   {
     slug: "ecommerce-platform",
