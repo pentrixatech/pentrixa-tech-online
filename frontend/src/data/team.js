@@ -2,8 +2,9 @@ export const team = [
   {
     id: "faiz-khan",
     name: "KHAN MOHD. FAIZ",
-    role: "Co-Founder / Full-Stack Development",
-    shortBio: "Specializes in building modern web applications, scalable REST APIs, and responsive frontend architectures with end-to-end integration.",
+    role: "Founder & Lead System Architect",
+    shortBio:
+      "Leads Pentrixa Tech's technical direction, system architecture, and full-stack product development, building modern web applications, scalable REST APIs, and responsive frontend architectures.",
     skills: [
       "Java",
       "Spring Boot",
@@ -23,11 +24,13 @@ export const team = [
       "Postman"
     ]
   },
+
   {
     id: "dilshad-siddiqui",
     name: "Dilshad Siddiqui",
     role: "Co-Founder / Backend Engineering",
-    shortBio: "Focuses on robust enterprise backend architecture, database persistence, secure authentication mechanisms, and structured API layers.",
+    shortBio:
+      "Focuses on robust enterprise backend architecture, database persistence, secure authentication mechanisms, and structured API layers.",
     skills: [
       "Java",
       "Spring Boot",
@@ -44,11 +47,13 @@ export const team = [
       "Maven"
     ]
   },
+
   {
     id: "nikita-maurya",
     name: "Nikita Maurya",
     role: "Co-Founder / Data Analytics & Business Intelligence",
-    shortBio: "Transforms raw business data into actionable visual reporting dashboards, key performance metrics, and decision-making intelligence models.",
+    shortBio:
+      "Transforms raw business data into actionable visual reporting dashboards, key performance metrics, and decision-making intelligence models.",
     skills: [
       "Power BI",
       "Tableau",
@@ -60,11 +65,13 @@ export const team = [
       "Business Intelligence"
     ]
   },
+
   {
     id: "mohammad-umair",
     name: "Mohammad Umair",
     role: "Co-Founder / Data Science & AI/ML",
-    shortBio: "Develops machine learning models, exploratory data pipelines, predictive algorithms, and AI-enabled utility prototypes.",
+    shortBio:
+      "Develops machine learning models, exploratory data pipelines, predictive algorithms, and AI-enabled utility prototypes.",
     skills: [
       "Python",
       "SQL",
@@ -79,11 +86,13 @@ export const team = [
       "Streamlit"
     ]
   },
+
   {
     id: "soham-vichare",
     name: "Soham Vichare",
     role: "Co-Founder / Software Developer",
-    shortBio: "Builds functional software modules, clean user interfaces, and dependable application logic across multi-language development stacks.",
+    shortBio:
+      "Builds functional software modules, clean user interfaces, and dependable application logic across multi-language development stacks.",
     skills: [
       "Python",
       "Node.js",
