@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" role="img" aria-label="Pentrixa Icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" role="img" aria-label="Pentrixa Tech Emblem">
   <defs>
     <!-- Webfont embed -->
     <style>
@@ -6,60 +6,58 @@
       .icon-monogram {
         font-family: 'Playfair Display', Georgia, serif;
         font-weight: 700;
-        font-size: 29px;
-        fill: #F7F1ED;
+        font-size: 28px;
+        fill: #F4F1EC;
+        letter-spacing: -0.02em;
       }
     </style>
 
-    <!-- Rose Gold Outer Rim Gradient -->
-    <linearGradient id="iconRoseGold" x1="15%" y1="15%" x2="85%" y2="85%">
-      <stop offset="0%" stop-color="#EEDAD5" />
+    <!-- Warm Rose-Bronze Rim Gradient -->
+    <linearGradient id="roseBronzeGradient" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#E8DAD5" />
       <stop offset="50%" stop-color="#C9A3A0" />
-      <stop offset="100%" stop-color="#9A6B68" />
+      <stop offset="100%" stop-color="#8C4A50" />
     </linearGradient>
 
-    <!-- Core Ambient Glow -->
-    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#803D41" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="#1A0E11" stop-opacity="0" />
+    <!-- Clean Optical Core Gradient -->
+    <radialGradient id="mastheadCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#23171B" />
+      <stop offset="100%" stop-color="#101217" />
     </radialGradient>
-
-    <!-- Subtle Drop Shadow -->
-    <filter id="iconShadow" x="-15%" y="-15%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="2.5" stdDeviation="3" flood-color="#000000" flood-opacity="0.5" />
-    </filter>
   </defs>
 
-  <!-- Ambient Glow Behind Geometric Layers -->
-  <circle cx="50" cy="50" r="42" fill="url(#coreGlow)" />
+  <!-- Outer Diamond Chassis (Deep Obsidian with Rose-Bronze Hairline) -->
+  <polygon points="50,6 94,50 50,94 6,50" 
+           stroke="url(#roseBronzeGradient)" 
+           stroke-width="2" 
+           stroke-linejoin="round" 
+           fill="url(#mastheadCore)" />
 
-  <g filter="url(#iconShadow)">
-    <!-- Outer Diamond -->
-    <polygon points="50,6 94,50 50,94 6,50" 
-             stroke="url(#iconRoseGold)" 
-             stroke-width="2.5" 
-             stroke-linejoin="round" 
-             fill="#180C10" />
+  <!-- Middle Architectural Drafting Ring (Warm Burgundy Dash-Line) -->
+  <polygon points="50,18 82,50 50,82 18,50" 
+           stroke="#A34E54" 
+           stroke-width="1.2" 
+           stroke-dasharray="3, 2"
+           stroke-linejoin="round" 
+           fill="none" 
+           opacity="0.75" />
 
-    <!-- Middle Geometric Accent Diamond -->
-    <polygon points="50,17.5 82.5,50 50,82.5 17.5,50" 
-             stroke="#7A3B3E" 
-             stroke-width="1.6" 
-             stroke-linejoin="round" 
-             fill="none" 
-             opacity="0.85" />
+  <!-- Inner Vault Frame (Subtle Warm Elevation) -->
+  <polygon points="50,28.5 71.5,50 50,71.5 28.5,50" 
+           stroke="#C9A3A0" 
+           stroke-width="1.2" 
+           stroke-linejoin="round" 
+           fill="#161920" />
 
-    <!-- Inner Diamond Frame -->
-    <polygon points="50,28 72,50 50,72 28,50" 
-             stroke="#E2C7C1" 
-             stroke-width="1.2" 
-             stroke-linejoin="round" 
-             fill="#221317" />
+  <!-- Corner Alignment Pips (Human-Drafted Architectural Detail) -->
+  <circle cx="50" cy="18" r="1.5" fill="#E8DAD5" />
+  <circle cx="82" cy="50" r="1.5" fill="#C9A3A0" />
+  <circle cx="50" cy="82" r="1.5" fill="#E8DAD5" />
+  <circle cx="18" cy="50" r="1.5" fill="#C9A3A0" />
 
-    <!-- Stylized Monogram P (Optically Centered) -->
-    <text x="50" y="50.5" 
-          class="icon-monogram" 
-          text-anchor="middle" 
-          dominant-baseline="central">P</text>
-  </g>
+  <!-- Optically Centered Monogram "P" -->
+  <text x="50" y="50.5" 
+        class="icon-monogram" 
+        text-anchor="middle" 
+        dominant-baseline="central">P</text>
 </svg>

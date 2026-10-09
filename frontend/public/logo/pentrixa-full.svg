@@ -1,78 +1,91 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 80" width="100%" height="100%" role="img" aria-label="Pentrixa Tech Logo">
   <defs>
-    <!-- Import Google Fonts for cross-platform rendering -->
+    <!-- Webfont embed matching Concept 1 typography -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&amp;family=Playfair+Display:wght@700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap');
+      
       .brand-title {
         font-family: 'Playfair Display', Georgia, serif;
         font-weight: 700;
-        letter-spacing: 0.12em;
-        fill: #F7F1ED;
+        letter-spacing: 0.08em;
+        fill: #F4F1EC;
       }
       .brand-sub {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        letter-spacing: 0.22em;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 500;
+        letter-spacing: 0.16em;
         fill: #C9A3A0;
       }
       .brand-tagline {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'JetBrains Mono', monospace;
         font-weight: 600;
-        font-size: 7px;
-        letter-spacing: 0.38em;
-        fill: #CBB9B5;
-        opacity: 0.85;
+        font-size: 7.25px;
+        letter-spacing: 0.28em;
+        fill: #9FA6B2;
       }
       .monogram {
         font-family: 'Playfair Display', Georgia, serif;
         font-weight: 700;
-        font-size: 21px;
-        fill: #F7F1ED;
+        font-size: 20px;
+        fill: #F4F1EC;
       }
     </style>
 
-    <!-- Subtle Ambient Glow -->
-    <radialGradient id="emblemGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#6F3437" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#1A0E11" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Linear Accents for Diamond Strokes -->
-    <linearGradient id="roseGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EAD5D0" />
-      <stop offset="100%" stop-color="#A57A78" />
+    <!-- Warm Rose-Bronze Linear Gradient -->
+    <linearGradient id="logoRoseBronze" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8DAD5" />
+      <stop offset="50%" stop-color="#C9A3A0" />
+      <stop offset="100%" stop-color="#8C4A50" />
     </linearGradient>
 
-    <!-- Soft Depth Filter -->
-    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.45" />
-    </filter>
+    <!-- Deep Vault Radial Core -->
+    <radialGradient id="emblemVault" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#23171B" />
+      <stop offset="100%" stop-color="#101217" />
+    </radialGradient>
   </defs>
 
-  <!-- Geometric Nested Diamond Emblem -->
-  <g transform="translate(12, 5)" filter="url(#softShadow)">
-    <!-- Ambient Backdrop Ring -->
-    <circle cx="35" cy="35" r="32" fill="url(#emblemGlow)" />
+  <!-- Left Geometric Emblem Structure -->
+  <g transform="translate(10, 5)">
+    <!-- Outer Diamond Chassis (Obsidian fill + Rose-Bronze hairline) -->
+    <polygon points="35,4 66,35 35,66 4,35" 
+             stroke="url(#logoRoseBronze)" 
+             stroke-width="1.8" 
+             stroke-linejoin="round" 
+             fill="url(#emblemVault)" />
 
-    <!-- Outer Diamond -->
-    <polygon points="35,4 66,35 35,66 4,35" stroke="url(#roseGoldGrad)" stroke-width="1.75" stroke-linejoin="round" fill="#180C10" />
+    <!-- Middle Architectural Drafting Ring (Burgundy Dashed Guide) -->
+    <polygon points="35,12.5 57.5,35 35,57.5 12.5,35" 
+             stroke="#A34E54" 
+             stroke-width="1.1" 
+             stroke-dasharray="2.5, 1.8"
+             stroke-linejoin="round" 
+             fill="none" 
+             opacity="0.8" />
 
-    <!-- Middle Diamond -->
-    <polygon points="35,12.5 57.5,35 35,57.5 12.5,35" stroke="#7A3B3E" stroke-width="1.25" stroke-linejoin="round" fill="none" opacity="0.85" />
+    <!-- Inner Vault Core -->
+    <polygon points="35,20 50,35 35,50 20,35" 
+             stroke="#C9A3A0" 
+             stroke-width="1" 
+             stroke-linejoin="round" 
+             fill="#161920" />
 
-    <!-- Inner Core Diamond -->
-    <polygon points="35,20.5 49.5,35 35,49.5 20.5,35" stroke="#E2C7C1" stroke-width="1" stroke-linejoin="round" fill="#241418" />
+    <!-- Alignment Precision Pips -->
+    <circle cx="35" cy="12.5" r="1.1" fill="#E8DAD5" />
+    <circle cx="57.5" cy="35" r="1.1" fill="#C9A3A0" />
+    <circle cx="35" cy="57.5" r="1.1" fill="#E8DAD5" />
+    <circle cx="12.5" cy="35" r="1.1" fill="#C9A3A0" />
 
-    <!-- Centered Monogram -->
-    <text x="35" y="36" class="monogram" text-anchor="middle" dominant-baseline="central">P</text>
+    <!-- Centered Monogram "P" -->
+    <text x="35" y="35.5" class="monogram" text-anchor="middle" dominant-baseline="central">P</text>
   </g>
 
   <!-- Wordmark & Suffix -->
-  <text x="96" y="40">
-    <tspan class="brand-title" font-size="23.5">PENTRIXA</tspan>
-    <tspan dx="10" class="brand-sub" font-size="14.5">TECH</tspan>
+  <text x="94" y="39">
+    <tspan class="brand-title" font-size="23">PENTRIXA</tspan>
+    <tspan dx="8" class="brand-sub" font-size="14">TECH</tspan>
   </text>
 
-  <!-- Tagline -->
-  <text x="97" y="58" class="brand-tagline">BUILD. INNOVATE. SCALE.</text>
+  <!-- Studio Subline Tag -->
+  <text x="95" y="57" class="brand-tagline">BUILD. INNOVATE. SCALE.</text>
 </svg>

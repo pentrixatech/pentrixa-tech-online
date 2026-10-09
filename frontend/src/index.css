@@ -1,42 +1,62 @@
 /* ==========================================================================
    PENTRIXA TECH - GLOBAL DESIGN SYSTEM & TOKENS
-   Palette: #12090B | #1A0E11 | #211317 | #35191D | #6F3437 
-            #C9A3A0 | #CBB9B5 | #E2C7C1 | #F7F1ED
+   Aesthetic: The Editorial Masthead (Dark-Warm-Light Hybrid Studio)
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
 :root {
-  /* Core Brand Colors */
-  --bg-primary: #12090B;
-  --bg-surface: #1A0E11;
-  --bg-elevated: #211317;
-  --bg-card: #26161B;
-  --bg-tinted: #35191D;
-  --bg-light: #F7F1ED;
+  /* Hybrid Foundation Palettes */
+  --bg-dark-primary: #101217;
+  --bg-dark-surface: #161920;
+  --bg-dark-elevated: #1D212B;
+  --bg-bridge: #23171B;
 
-  /* Accent & Border Colors */
+  /* Warm Linen & Light Surface Palettes */
+  --bg-light-canvas: #F6F4EF;
+  --bg-light-surface: #FFFFFF;
+  --bg-light-elevated: #EFECE5;
+
+  /* Global Dynamic Tokens (Light Body by Default) */
+  --bg-primary: var(--bg-light-canvas);
+  --bg-surface: var(--bg-light-surface);
+  --bg-elevated: var(--bg-light-elevated);
+  --bg-card: var(--bg-light-surface);
+  --bg-tinted: #EAE5DC;
+
+  /* Studio Accents */
   --accent-burgundy: #6F3437;
-  --accent-rose: #C9A3A0;
-  --accent-blush: #E2C7C1;
-  --accent-soft: #CBB9B5;
-  --border-subtle: rgba(203, 185, 181, 0.14);
-  --border-strong: rgba(203, 185, 181, 0.28);
-  --border-hover: rgba(226, 199, 193, 0.45);
+  --accent-rose: #A34E54;
+  --accent-blush: #C9A3A0;
+  --accent-soft: #7A726A;
+  --accent-amber: #C87D32;
+  --accent-green: #2E7D32;
 
-  /* Typography Colors */
-  --text-primary: #F7F1ED;
-  --text-secondary: #CBB9B5;
-  --text-muted: #8F7B77;
-  --text-dark: #12090B;
+  /* Hairlines & Borders */
+  --border-subtle: #E5DFD5;
+  --border-strong: #D6CEBF;
+  --border-dark-subtle: rgba(255, 255, 255, 0.08);
+  --border-dark-strong: rgba(255, 255, 255, 0.16);
+  --border-hover: #6F3437;
+
+  /* Typography Inks */
+  --text-primary: #1A1715;
+  --text-secondary: #5F574E;
+  --text-muted: #8C8276;
+  --text-dark: #1A1715;
+  --text-light: #F4F1EC;
+  --text-light-secondary: #9FA6B2;
 
   /* Typography Families */
   --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Layout & Transitions */
+  /* Layout & Metrics */
   --max-width: 1240px;
-  --header-height: 74px;
-  --transition-fast: 160ms ease-out;
-  --transition-normal: 240ms ease-out;
+  --header-height: 72px;
+  --transition-fast: 140ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 220ms cubic-bezier(0.16, 1, 0.3, 1);
   --radius-xs: 3px;
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -58,18 +78,18 @@ html {
   color: var(--text-primary);
 }
 
-/* GLOBAL PERSISTENT ARCHITECTURAL BLUEPRINT GRID ON EVERY PAGE */
+/* Warm Linen Architectural Drafting Grid Background */
 body {
   font-family: var(--font-sans);
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.6;
   color: var(--text-primary);
-  background-color: var(--bg-primary);
+  background-color: var(--bg-light-canvas);
   background-image: 
-    radial-gradient(rgba(201, 163, 160, 0.14) 1px, transparent 1px),
-    radial-gradient(rgba(111, 52, 55, 0.12) 1.5px, transparent 1.5px);
-  background-size: 36px 36px, 72px 72px;
-  background-position: 0 0, 18px 18px;
+    linear-gradient(to right, rgba(26, 23, 21, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(26, 23, 21, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-position: 0 0;
   background-attachment: fixed;
   min-height: 100vh;
   overflow-x: hidden;
@@ -85,24 +105,25 @@ body {
   background-color: transparent !important;
 }
 
-/* Typography Defaults */
+/* Typography Hierarchy */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   color: var(--text-primary);
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
 
 p {
   color: var(--text-secondary);
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  transition: color var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
 button {
@@ -127,20 +148,20 @@ img, svg {
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 /* Accessible Focus States */
 :focus-visible {
-  outline: 2px solid var(--accent-rose);
-  outline-offset: 3px;
+  outline: 2px solid var(--accent-burgundy);
+  outline-offset: 2px;
 }
 
 /* Section Spacing */
 .section {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 68px;
+  padding-bottom: 68px;
   position: relative;
   background-color: transparent !important;
 }
@@ -150,8 +171,8 @@ img, svg {
     --header-height: 64px;
   }
   .section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   .container {
     padding-left: 18px;

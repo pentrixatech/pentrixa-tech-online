@@ -18,6 +18,7 @@ export default function ServiceDetail() {
 
   return (
     <main className="page-wrapper service-detail-page">
+      {/* Dark Masthead Hero Section */}
       <section className="page-hero-section">
         <div className="container">
           <Link to="/services" className="back-link">
@@ -31,13 +32,49 @@ export default function ServiceDetail() {
             <Button to="/contact" variant="primary" size="md">
               Request a Project Proposal
             </Button>
-            <Button href={whatsappUrl} variant="outline" size="md" target="_blank">
+            <Button 
+              href={whatsappUrl} 
+              variant="secondary" 
+              size="md" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <svg 
+                width="16" 
+                height="16" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                aria-hidden="true" 
+                style={{ marginRight: '6px' }}
+              >
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
               Discuss on WhatsApp
             </Button>
           </div>
         </div>
       </section>
 
+      {/* Warm Transitional Strip */}
+      <div className="capability-strip">
+        <div className="container capability-container">
+          <span className="capability-item">SERVICE SPEC</span>
+          <span className="capability-separator">/</span>
+          <span className="capability-item">DIRECT SCOPE</span>
+          <span className="capability-separator">/</span>
+          <span className="capability-item">CORE TECH STACK</span>
+          <span className="capability-separator">/</span>
+          <span className="capability-item">FOUNDER LED</span>
+          <span className="capability-separator">/</span>
+          <span className="capability-item">PRODUCTION SLA</span>
+        </div>
+      </div>
+
+      {/* Warm Linen Scope & Specifications */}
       <section className="section service-scope-section">
         <div className="container">
           <div className="service-scope-grid">
