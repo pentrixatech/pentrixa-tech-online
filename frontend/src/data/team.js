@@ -47,25 +47,7 @@ export const team = [
       "Maven"
     ]
   },
-
-  {
-    id: "nikita-maurya",
-    name: "Nikita Maurya",
-    role: "Co-Founder / Data Analytics & Business Intelligence",
-    shortBio:
-      "Transforms raw business data into actionable visual reporting dashboards, key performance metrics, and decision-making intelligence models.",
-    skills: [
-      "Power BI",
-      "Tableau",
-      "Excel",
-      "SQL",
-      "Python basics",
-      "MySQL",
-      "Data Analytics",
-      "Business Intelligence"
-    ]
-  },
-
+  
   {
     id: "mohammad-umair",
     name: "Mohammad Umair",

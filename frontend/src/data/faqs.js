@@ -1,15 +1,15 @@
 export const faqs = [
   {
     question: "What services does Pentrixa Tech provide?",
-    answer: "We offer end-to-end technology solutions across six core domains: Web Development, Custom Software Engineering, Mobile Applications, AI & Machine Learning Integrations, Data Analytics & Business Intelligence (Power BI/SQL), and Business Process Automation."
+    answer: "We offer end-to-end technology solutions across core engineering domains: Full-Stack Web Development, Custom Software Engineering, Mobile Applications, AI & Machine Learning Integrations, and Business Process Automation."
   },
   {
     question: "How are projects handled at Pentrixa Tech?",
-    answer: "We are a founder-led engineering team. Every project is directly managed and engineered by our co-founders. You communicate directly with the developers and analysts writing your code and designing your systems."
+    answer: "We are a founder-led engineering team. Every project is directly managed and engineered by our co-founders. You communicate directly with the engineers writing your code and architecting your systems."
   },
   {
     question: "Do you work with startups and small businesses?",
-    answer: "Yes. We work with early-stage founders, emerging businesses, and established companies seeking practical digital infrastructure, custom tools, or data intelligence without unnecessary enterprise overhead."
+    answer: "Yes. We work with early-stage founders, emerging businesses, and established companies seeking practical digital infrastructure, custom tools, or software automation without unnecessary enterprise overhead."
   },
   {
     question: "How do we get started on a project?",

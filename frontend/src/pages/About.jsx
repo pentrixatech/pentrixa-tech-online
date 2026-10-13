@@ -11,7 +11,7 @@ export default function About() {
           <SectionLabel text="ABOUT PENTRIXA TECH" />
           <h1 className="page-hero-title">Engineering with intent and clarity.</h1>
           <p className="page-hero-desc">
-            Pentrixa Tech is a founder-led engineering startup. We bridge product thinking, dependable full-stack software development, practical artificial intelligence, and centralized business intelligence to solve concrete operational problems.
+            Pentrixa Tech is a founder-led engineering startup. We bridge product thinking, dependable full-stack software development, practical artificial intelligence, and scalable system architectures to solve concrete operational problems.
           </p>
         </div>
       </section>
@@ -22,7 +22,7 @@ export default function About() {
             <div className="narrative-col">
               <h2 className="narrative-heading">Our Story</h2>
               <p>
-                Pentrixa Tech was founded by five technical practitioners—spanning full-stack development, enterprise backend engineering, business intelligence, data science, and multi-language software development. 
+                Pentrixa Tech was founded by four technical practitioners—spanning full-stack web engineering, enterprise backend architecture, data science & machine learning, and multi-language software development.
               </p>
               <p>
                 We noticed that modern businesses were caught between two extremes: overpriced agencies delivering generic templates with high markup, and fragmented freelance arrangements lacking architectural discipline. Pentrixa Tech was established to provide direct, accountable founder-led engineering without unnecessary corporate overhead.
@@ -35,7 +35,7 @@ export default function About() {
                 <strong>Substance over hype:</strong> We do not pitch artificial intelligence where a clean relational SQL query solves the issue, nor do we engineer complicated microservices where a monolithic application provides greater speed and stability.
               </p>
               <p>
-                <strong>Direct accountability:</strong> When you partner with Pentrixa Tech, you work directly with the co-founders designing your schema, writing your code, and setting up your data models.
+                <strong>Direct accountability:</strong> When you partner with Pentrixa Tech, you work directly with the co-founders designing your schema, writing your code, and architecting your systems.
               </p>
             </div>
           </div>

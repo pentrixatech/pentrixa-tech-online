@@ -28,7 +28,6 @@ export default function Footer() {
               <li><Link to="/services/custom-software">Custom Software</Link></li>
               <li><Link to="/services/mobile-apps">Mobile Apps</Link></li>
               <li><Link to="/services/ai-machine-learning">AI & Machine Learning</Link></li>
-              <li><Link to="/services/data-analytics">Data Analytics & BI</Link></li>
               <li><Link to="/services/business-automation">Business Automation</Link></li>
             </ul>
           </div>

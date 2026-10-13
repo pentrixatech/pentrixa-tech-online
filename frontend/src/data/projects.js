@@ -32,17 +32,7 @@ export const projects = [
     deliverables: ["Role-Based Access", "Client Records", "Order Tracking", "Operational Logs"],
     outcome: "Unified operational visibility with audited data access controls."
   },
-  {
-    slug: "sales-analytics-dashboard",
-    title: "Sales Analytics Dashboard",
-    category: "Data Analytics & BI",
-    tag: "Showcase",
-    summary: "An interactive business intelligence reporting suite presenting multi-region revenue metrics, conversion trends, and SKU velocity.",
-    overview: "Built using Power BI and structured SQL data modeling to provide commercial leadership with live insight into regional growth and margin variance.",
-    stack: ["Power BI", "SQL", "Excel", "Data Modeling"],
-    deliverables: ["Executive KPI Cards", "Regional Performance Maps", "Quarterly Drilldowns", "Cohort Analysis"],
-    outcome: "Fast, drillable reporting eliminating hours of manual weekly spreadsheet preparation."
-  },
+  
   {
     slug: "ai-business-assistant",
     title: "AI Business Assistant",

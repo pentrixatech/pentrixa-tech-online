@@ -16,14 +16,6 @@ export const insights = [
     content: "Off-the-shelf software is ideal for standardized operational functions such as basic payroll or general accounting. However, when a company's competitive advantage lies in a proprietary operational flow—or when subscription fees across numerous disconnected tools escalate while forcing manual data re-entry—custom software becomes an asset. Building proprietary software ensures complete data ownership, tailored workflows, and zero per-seat licensing taxes."
   },
   {
-    slug: "why-data-dashboards-matter-for-growing-businesses",
-    category: "Data",
-    title: "Why Data Dashboards Matter for Growing Businesses",
-    readTime: "4 min read",
-    summary: "Moving from reactive spreadsheet lookups to unified, real-time executive visibility with Power BI and structured SQL.",
-    content: "Operating a business using scattered, unlinked spreadsheets often results in delayed decision-making and conflicting numbers between departments. Centralized Business Intelligence dashboards—built on clean relational data models—provide leadership with live insight into cash flow, product margins, and customer acquisition efficiency. When numbers are transparent and centralized, strategic decisions are grounded in verifiable reality."
-  },
-  {
     slug: "website-vs-web-application",
     category: "Technology",
     title: "Website vs. Web Application: Understanding What Your Business Needs",

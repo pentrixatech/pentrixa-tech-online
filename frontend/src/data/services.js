@@ -60,21 +60,6 @@ export const services = [
     technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Streamlit", "REST APIs", "AWS"]
   },
   {
-    slug: "data-analytics",
-    title: "Data Analytics & BI",
-    shortDescription: "Centralized business intelligence dashboards and structured data pipelines to empower confident executive decision-making.",
-    overview: "Scattered data across spreadsheets and isolated systems blinds leadership to performance trends. We consolidate disparate data sources into clear, interactive reporting interfaces.",
-    deliverables: [
-      "Interactive Power BI executive dashboards",
-      "Tableau visual performance reports",
-      "SQL data modeling & warehouse queries",
-      "KPI & metric tracking systems",
-      "Business intelligence reporting suites",
-      "Data pipeline cleanup & visualization"
-    ],
-    technologies: ["Power BI", "Tableau", "SQL", "MySQL", "Excel Advanced", "Python"]
-  },
-  {
     slug: "business-automation",
     title: "Business Automation",
     shortDescription: "Elimination of repetitive manual processes through custom workflow scripting, software glue, and API integrations.",
