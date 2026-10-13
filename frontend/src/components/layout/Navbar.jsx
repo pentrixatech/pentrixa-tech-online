@@ -58,7 +58,6 @@ export default function Navbar() {
                   <Link to="/services/custom-software" className="dropdown-item">Custom Software</Link>
                   <Link to="/services/mobile-apps" className="dropdown-item">Mobile Apps</Link>
                   <Link to="/services/ai-machine-learning" className="dropdown-item">AI & Machine Learning</Link>
-                  <Link to="/services/data-analytics" className="dropdown-item">Data Analytics & BI</Link>
                   <Link to="/services/business-automation" className="dropdown-item">Business Automation</Link>
                 </div>
               )}
